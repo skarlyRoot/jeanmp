@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(40, 40, 40);
+    margin: 0;
+}
+
+.cabecera {
+    background-color: rgb(30, 30, 30);
+    position: fixed;
+    top: 20px;
+    left: 200px;
+    right: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: height 0.3s ease;
+    border-color: blueviolet;
+    border-radius: 35px;
+    transition: all 0.3s ease;
+    font-family: "Caveat", cursive;
+    font-size: 25px;
+}
+
+.sticky {
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(30, 30, 30);
+    padding: 15px 0;
+    border-radius: 0%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+
+}
+
+.sticky .titulo {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.titulo {
+    color: white;
+    font-weight: bold;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: "Caveat", cursive;
+    font-style: normal;
+    padding: 10px;
+    border-radius: 25px;
+    
+    margin-left: 35px;
+    margin-right: 35px;
+    transition: border-radius 1s, border-color 1s;
+}
+
+.titulo:hover {
+    transform: scale(1.1);
+    border: 1px solid mediumvioletred;
+    border-radius: 25px;
+    background-color: rgb(43, 42, 42);
+    transition: all 0.5s ease;
+}
+
+/*********************************************Scroller*****************************************/
+
+/* Para navegadores que admiten el modelo de scroll personalizado de WebKit */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho del scroll */
+}
+  
+/* Barra de scroll */
+::-webkit-scrollbar-thumb {
+    background-color: mediumvioletred; /* Color de fondo del scroll */
+    border-radius: 6px; /* Radio de borde del scroll */
+}
+  
+/* Barra de scroll en hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(177, 16, 118); /* Color de fondo del scroll al pasar el cursor sobre él */
+}
+  
+/* Track de scroll (área donde se desplaza) */
+::-webkit-scrollbar-track {
+    background:  rgb(40, 40, 40); /* Color de fondo del track */
+}
+  
+/* Corner de scroll (esquina) */
+::-webkit-scrollbar-corner {
+    background: transparent; /* Color de fondo de la esquina */
+}
+
+
+/******************************************Container***************************************/
+
+.container{
+    display: flex;
+}
+
+.foto{
+    background: url(../img/foto.jpg);
+    margin-top: 10%;
+    margin-left: 7%;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.contenido{
+    margin-top: 9%;
+    margin-left: 14%;
+    color: aliceblue;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 55px;
+    margin-left: 50px;
+    margin-bottom: -55px; /* Ajusta este valor según tu preferencia */
+    margin-top: -10px;
+}
+
+h2 {
+    font-family: "Pacifico", cursive;
+    font-size: 45px;
+    margin-left: 100px;
+    margin-bottom: 10px; /* Ajusta este valor según tu preferencia */
+}
+
+.console {
+    margin-top: 50px;
+    width: 600px;
+    height: 360px;
+    background-color: #2d2d2d;
+    border: 1px solid #000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.text{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: "Inconsolata", monospace;
+    margin: 10px;
+}
+
+.title-bar {
+  height: 30px;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #000;
+  display: flex;
+}
+
+.console a{
+    margin-left: 170px;
+    margin-top: 5px;
+}
+
+a img{
+    width: 21px;
+    height: 21px;
+}
+.mi{
+    font-family: "Inconsolata", monospace;
+    font-size: 18px;
+    color: aliceblue;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.close-button, .minimize-button, .zoom-button {
+  width: 12px;
+  height: 12px;
+  margin: auto 5px;
+  border-radius: 50%;
+}
+
+.close-button {
+  background-color: #ff5f57;
+}
+
+.minimize-button {
+  background-color: #ffbd2e;
+}
+
+.zoom-button {
+  background-color: #32d74b;
+}
+/*
+.folder-bar {
+  height: 30px;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #000;
+}
+*/
+.alter{
+    display: flex;
+    margin-left: 70px;
+}
+
+.cv {
+  position: relative;
+  width: 200px; /* Ancho del contenedor */
+  height: 200px; /* Altura del contenedor */
+}
+
+.boton1 {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.boton1 img {
+  width: 200px;
+  height: 200px;
+  transition: filter 0.3s ease; /* Añade una transición suave al filtro */
+}
+
+.boton1 .texto {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease; /* Añade una transición suave a la opacidad */
+}
+
+.boton1:hover img {
+  filter: blur(2px); /* Aplica un desenfoque leve a la imagen al pasar el cursor */
+}
+
+.boton1:hover .texto {
+  opacity: 1; /* Muestra el texto cuando se pasa el cursor sobre el botón */
+}
+
+
+.contacto{
+    margin-left: 70px;
+    width: 200px;
+    height: 200px;
+}
+
+.contacto img{
+    width: 200px;
+    height: 200px;
+}
+
+.boton2 {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.boton2 img {
+  width: 170px;
+  height: 170px;
+  margin-top: 10px;
+  transition: filter 0.3s ease; /* Añade una transición suave al filtro */
+}
+
+.boton2 .texto {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease; /* Añade una transición suave a la opacidad */
+}
+
+.boton2:hover img {
+  filter: blur(2px); /* Aplica un desenfoque leve a la imagen al pasar el cursor */
+}
+
+.boton2:hover .texto {
+  opacity: 1; /* Muestra el texto cuando se pasa el cursor sobre el botón */
+}
+
+
+
+/************************************************formacion*****************************************************/
+
+.formacion{
+    background: url(../img/formacionII.gif);
+    background-size: cover;
+    height: 900px;
+    width: auto;
+    transition: all 0.5s ease;
+    margin-top: 60px;
+}
+/*
+.centro .u{
+    width: 450px;
+    height: auto;
+    font-family: "Sedgwick Ave", cursive;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 40px;
+    color: rgb(236, 243, 243);
+    border-radius: 50px;
+}
+*/
+.ventana{
+    display: flex;
+}
+
+.ventana .console2 {
+    margin-top: -36px;
+    
+    height: 888px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    border: 1px solid #000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.barexp {
+  display: flex;
+  margin-top: 14px;
+  font-size: 11px;
+  font-family: "Inconsolata", monospace;
+}
+
+.bar {
+  width: 50px; /* Ancho de cada barra */
+  height: 60px; /* Altura de cada barra */
+  border-radius: 10px;
+  background-color: #505253; /* Color de las barras */
+  margin-right: 1px; /* Espacio entre las barras */
+}
+
+.bar1{
+    margin-top: 20px;
+    width: 50px; /* Ancho de cada barra */
+    height: 20px; /* Altura de cada barra */
+    border-radius: 10px;
+    background-color: #2da2dd;
+    margin-right: 4px; /* Espacio entre las barras */
+}
+
+.bar1 p{
+    margin-left: 9px;
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.bar2{
+    width: 50px; /* Ancho de cada barra */
+    height: 20px; /* Altura de cada barra */
+    border-radius: 10px;
+    background-color: #ffbd2e;
+    margin-right: 4px; /* Espacio entre las barras */
+}
+.bar2 p{
+    margin-left: 6px;
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.bar3{
+    width: 50px; /* Ancho de cada barra */
+    height: 20px; /* Altura de cada barra */
+    border-radius: 10px;
+    background-color: #32d74b;
+    margin-right: 1px; /* Espacio entre las barras */
+}
+.bar3 p{
+    margin-left: 12px;
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.ventana .text2{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: "Inconsolata", monospace;
+    margin: 10px;
+}
+
+span{
+  width: 23ch;
+  animation: typing 2s steps(23), blink .5s infinite step-end  alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+@keyframes typing{
+  from{width: 0px;}
+}
+@keyframes blink {
+  50%{border-color: transparent;}
+}
+
+
+
+
+
+.title-bar2{
+  height: 45px;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #000;
+  display: flex;
+}
+
+.ventana .title-bar2 {
+  height: 45px;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #000;
+  display: flex;
+}
+
+.ventana .console2 a{
+    margin-left: 725px;
+    margin-top: 5px;
+}
+
+.ventana  a img{
+    width: 21px;
+    height: 21px;
+    margin-top: 10px;
+}
+.ventana .mi{
+    font-family: "Inconsolata", monospace;
+    font-size: 18px;
+    color: aliceblue;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.ventana .close-button, .minimize-button, .zoom-button {
+  width: 12px;
+  height: 12px;
+  margin: auto 5px;
+  border-radius: 50%;
+}
+
+.ventana .close-button {
+  background-color: #ff5f57;
+}
+
+.ventana .minimize-button {
+  background-color: #ffbd2e;
+}
+
+.ventana .zoom-button {
+  background-color: #32d74b;
+}
+/*
+.ventana .folder-bar {
+  height: 30px;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #000;
+}
+
+.tech{
+    margin-right: 60px;
+}
+
+.skill{
+    margin-right: 60px;
+    margin-left: 50px;
+}
+
+.apre{
+    margin-right: 60px;
+    margin-left: 50px;
+}
+***/
+
+
+/************************************************Experiencia*****************************************************/
+
+.experiencia{
+    background-color: rgba(89, 89, 94, 0.288);
+    height: auto;
+    width: auto;
+    transition: all 0.5s ease;
+    margin-top: 80px;
+}
+
+.experiencia h1{
+    font-family: "Sedgwick Ave", cursive;
+    font-size: 90px;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 40px;
+    color: rgb(31, 230, 13);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px 160px;
+  width: 60%;
+  max-width: 1200px;
+  margin-left: 15%;
+}
+
+.grid-item {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.grid-item:hover{
+  background-color: #505253;
+}
+.grid-item span2{
+  font-size: 35px;
+  font-family: "Caveat", cursive;
+}
